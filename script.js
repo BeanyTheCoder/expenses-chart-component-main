@@ -8,11 +8,13 @@ fetch("data.json")
 let labels = [];
 let amounts = [];
 let colors = [];
+let hoverColors = [];
 function handleData(data) {
   data.forEach((element) => {
     labels.push(element.day);
     amounts.push(element.amount);
     colors.push("hsl(10, 79%, 65%)");
+    hoverColors.push("hsla(10, 79%, 65%, 0.75)");
   });
 
   render();
@@ -23,9 +25,9 @@ function render() {
     labels: labels,
     datasets: [
       {
-        label: "Data",
         data: amounts,
         backgroundColor: colors,
+        hoverBackgroundColor: hoverColors,
       },
     ],
   };
@@ -36,6 +38,8 @@ function render() {
   const largestValueIndex = data.datasets[0].data.indexOf(largestValue);
 
   data.datasets[0].backgroundColor[largestValueIndex] = "hsl(186, 34%, 60%)";
+  data.datasets[0].hoverBackgroundColor[largestValueIndex] =
+    "hsla(186, 34%, 60%, 0.75)";
 
   const myChart = new Chart(ctx, {
     type: "bar",
@@ -48,7 +52,6 @@ function render() {
       },
       scales: {
         x: {
-          display: false,
           grid: {
             display: false,
           },
@@ -56,7 +59,7 @@ function render() {
         y: {
           display: false,
           grid: {
-            display: false, 
+            display: false,
           },
         },
       },
