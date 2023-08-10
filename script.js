@@ -63,6 +63,11 @@ function render() {
           },
         },
       },
+      elements: {
+        bar: {
+          borderRadius: 4,  
+        },
+      },
     },
   });
 }
