@@ -7,8 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -16,8 +15,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+      href="./images/favicon-32x32.png" />
 
     <title>Frontend Mentor | Expenses chart component</title>
   </head>
@@ -33,23 +31,25 @@
       <div class="card__main">
         <div class="card__main__graph">
           <h1>Spending - Last 7 days</h1>
-          <div class="card__main__graph__graph">placeholder</div>
+          <div class="card__main__graph__graph" id="bar-container">
+            <canvas id="chart"> </canvas>
+          </div>
         </div>
         <div class="divider"></div>
         <div class="card__main__info">
           <div class="card__main__info__total">
-            <p class="heavy">
-              <span class="light">Total this month</span> $478.33
-            </p>
+            <p class="light">Total this month</p>
+            <p class="heavy">$478.33</p>
           </div>
           <div class="card__main__info__last">
-            <p class="heavy">
-              +2.4%
-              <span class="light">from last month</span>
-            </p>
+            <p class="heavy">+2.4%</p>
+            <p class="light">from last month</p>
           </div>
         </div>
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
