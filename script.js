@@ -65,7 +65,7 @@ function render() {
       },
       elements: {
         bar: {
-          borderRadius: 4,  
+          borderRadius: 3,  
         },
       },
     },
