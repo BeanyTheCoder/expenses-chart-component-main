@@ -27,7 +27,7 @@ body {
 
 .light {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .card {
@@ -101,7 +101,7 @@ body {
 }
 
 .card__main__info__total p.heavy {
-  font-size: 2.2em;
+  font-size: 2em;
 }
 
 .card__main__info__last p.heavy {
