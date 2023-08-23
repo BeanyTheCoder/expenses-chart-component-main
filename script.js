@@ -63,6 +63,7 @@ function render() {
           },
         },
       },
+      maintainAspectRatio: false,
       elements: {
         bar: {
           borderRadius: 4,
