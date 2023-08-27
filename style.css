@@ -44,12 +44,12 @@ body {
   background-color: var(--soft-red);
   display: flex;
   justify-content: space-between;
-  padding: 1.1em;
+  padding: 1em 1.2em;
   border-radius: 16px;
 }
 
 .card__dashboard img {
-  width: 65px;
+  width: 55px;
 }
 
 .card__dashboard__balance p {
