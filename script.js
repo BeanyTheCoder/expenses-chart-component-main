@@ -67,6 +67,7 @@ function render() {
       elements: {
         bar: {
           borderRadius: 2,
+          borderSkipped: false,
         },
       },
     },
