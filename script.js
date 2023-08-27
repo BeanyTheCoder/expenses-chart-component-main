@@ -66,7 +66,7 @@ function render() {
       maintainAspectRatio: false,
       elements: {
         bar: {
-          borderRadius: 4,
+          borderRadius: 2,
         },
       },
     },

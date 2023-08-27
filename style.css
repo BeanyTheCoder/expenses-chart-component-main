@@ -27,11 +27,13 @@ body {
 
 .light {
   font-weight: 400;
-  font-size: 0.9rem;
+  font-size: 0.7em;
 }
 
 .card {
-  font-size: 18px;
+  /* tweaking font size for more accurate design */
+  font-size: 20px;
+
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -47,7 +49,7 @@ body {
 }
 
 .card__dashboard img {
-  width: 55px;
+  width: 65px;
 }
 
 .card__dashboard__balance p {
@@ -57,6 +59,7 @@ body {
 .card__dashboard__balance p + p {
   margin-top: 0.3em;
   font-size: 1.3em;
+  font-weight: 700;
 }
 
 .divider {
@@ -68,7 +71,7 @@ body {
 
 .card__main {
   background-color: var(--very-pale-orange);
-  padding: 1.5em 1.75em;
+  padding: 1.5em;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -81,6 +84,7 @@ body {
 
 .card__main__graph__graph {
   margin-top: 1.1em;
+  height: 175px;
 
   display: flex;
   justify-content: center;
@@ -89,7 +93,7 @@ body {
 .card__main__info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .card__main__info p.heavy {
@@ -101,10 +105,40 @@ body {
 }
 
 .card__main__info__total p.heavy {
-  font-size: 2em;
+  font-size: 1.9em;
 }
 
 .card__main__info__last p.heavy {
-  font-size: 0.9em;
+  font-size: 0.7em;
   text-align: right;
+}
+
+@media screen and (max-width: 450px) {
+  .card {
+    /* changing font size in parent to change all other font sizes */
+    font-size: 15px;
+  }
+
+  .card__dashboard img {
+    width: 50px;
+  }
+
+  .card__main {
+    padding: 1.5em 1.25em;
+  }
+
+  .card__dashboard,
+  .card__main {
+    border-radius: 12px;
+  }
+
+  .card__dashboard__balance .light,
+  .card__main__info .light,
+  .card__main__info__last .heavy {
+    font-size: 0.85em !important;
+  }
+
+  .card__main__info__total .heavy {
+    font-size: 1.7em !important;
+  }
 }

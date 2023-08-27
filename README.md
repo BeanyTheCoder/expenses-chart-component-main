@@ -15,9 +15,7 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 - [My process 🏗️](#my-process-🏗️)
   - [Built with 🛠️](#built-with-🛠️)
   - [What I learned 🧠](#what-i-learned-🧠)
-  - [Continued development 🚀](#continued-development-🚀)
   - [Useful resources 📚](#useful-resources-📚)
-- [Acknowledgments 🙏](#acknowledgments-🙏)
 - [Contact 📧](#contact-📧)
 - [Author 👤](#author-👤)
 
@@ -28,6 +26,9 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 Users should be able to:
 
 - ✅ View the bar chart and hover over the individual bars to see the correct amounts for each day
+
+  - _Currently, chart.js does not support customizable tooltips(atleast that I am aware of) so I am simply using their own in-built tooltips, meaning it does not match the design_
+
 - ✅ See the current day’s bar highlighted in a different colour to the other bars
 - ✅ View the optimal layout for the content depending on their device’s screen size
 - ✅ See hover states for all interactive elements on the page
@@ -64,17 +65,9 @@ I learned a lot about chart.js and their syntax.
 // placholder for chart.js code
 ```
 
-### Continued development 🚀
-
-placeholder
-
 ### Useful resources 📚
 
 - I recommend reading the [Chart.js docs](https://www.chartjs.org/docs/latest/) to try to wrap your head around it and how it works.
-
-## Acknowledgments 🙏
-
-- placeholder
 
 ## Contact 📧
 
