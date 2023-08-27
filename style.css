@@ -32,7 +32,7 @@ body {
 
 .card {
   /* tweaking font size for more accurate design */
-  font-size: 20px;
+  font-size: 22px;
 
   display: flex;
   flex-direction: column;
