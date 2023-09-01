@@ -48,6 +48,7 @@ _My solution (Mobile)_
 
 - Solution repo on Github: [here](https://github.com/BeanyTheCoder/expenses-chart-component-main)
 - Solution link on Front End Mentor: [here](https://www.frontendmentor.io/solutions/expenses-chart-component-MUHwPg-Ib7)
+- Live site link: [here](https://beanythecoder.github.io/expenses-chart-component-main/)
 
 ## My process 🏗️
 
